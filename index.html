@@ -1,12 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; URL='https://sites.google.com/view/theoreticalnexus/anveshana'">
-    <title>Anveshanā Magazine by Nexus</title>
-     <link href="favicon.png" rel="icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anveshanā</title>
+   <link rel="icon" type="image/png" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap');
+    body {
+      font-family: 'Mukta', sans-serif;
+      background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+    }
+    
+    .modal {
+      display: none;
+      backdrop-filter: blur(4px);
+    }
+    
+    .modal.show {
+      display: flex;
+    }
+    
+    .cover-clickable {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    
+    .cover-clickable:hover {
+      transform: scale(1.02);
+    }
+  </style>
 </head>
-<body>
-    <p>If you are not redirected, <a href="https://sites.google.com/view/theoreticalnexus/anveshana?authuser=0">click here</a>.</p>
+<body class="text-gray-900 min-h-screen relative overflow-x-hidden">
+  
+  <!-- Cover Preview Modal -->
+  <div id="modal" class="modal fixed inset-0 bg-black bg-opacity-60 z-50 items-center justify-center p-4">
+    <div class="relative">
+     
+      <img src="anveshana cover.jpg" alt="Anveshanā Issue 1 Cover - Full Preview" class="max-h-[85vh] max-w-[85vw] rounded-lg shadow-2xl" />
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="bg-gray-50 border-b border-gray-200 shadow-sm sticky top-0 z-40">
+    <div class="max-w-5xl mx-auto px-6 sm:px-8">
+      <div class="flex items-center justify-between py-3">
+        <!-- Logo on left -->
+        <div class="flex items-center">
+          <div class="w-12 h-12 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mr-2 sm:mr-3">
+            <span><img src="favicon-new.png" alt="Anveshana Logo" class="w-24 h-24 sm:w-40 sm:h-40 object-contain" /></span>
+          </div>
+          <span class="text-lg sm:text-xl font-bold text-[#7b223b]">Anveshanā e-Magazine</span>
+        </div>
+        
+        <!-- Navigation links on right -->
+        <div class="flex space-x-4 sm:space-x-8">
+          <a href="#" class="text-gray-700 hover:text-[#7b223b] hover:border-b-2 hover:border-[#7b223b] pb-1 transition-all duration-200 font-medium text-sm sm:text-base">
+            Home
+          </a>
+          <a href="#" class="text-gray-700 hover:text-[#7b223b] hover:border-b-2 hover:border-[#7b223b] pb-1 transition-all duration-200 font-medium text-sm sm:text-base">
+            Archive
+          </a>
+          <a href="about.html" class="text-gray-700 hover:text-[#7b223b] hover:border-b-2 hover:border-[#7b223b] pb-1 transition-all duration-200 font-medium text-sm sm:text-base">
+            About
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Header -->
+  <div class="max-w-4xl mx-auto pt-10 pb-8 sm:pt-12 sm:pb-10 px-4 sm:px-6 border-b-2 border-gray-200">
+    <div class="flex items-center justify-center">
+      <div class="text-center">
+        <h1 class="text-3xl sm:text-5xl font-bold text-[#7b223b] mb-3">Anveshanā</h1>
+        <p class="text-base sm:text-lg text-gray-600 italic">Celebrating the spirit of truth, beauty, and inquiry.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Volume Info and Read Full Issue -->
+  <div class="flex flex-col sm:flex-row justify-center pt-8 sm:pt-10 pb-8 sm:pb-10 gap-4 sm:gap-8 px-4">
+    <div class="border-2 border-[#4b0d1a] text-[#4b0d1a] rounded-lg px-4 sm:px-6 py-2 text-base sm:text-lg font-medium text-center">
+      Vol 1 • Issue 1 – January 2025
+    </div>
+    <div class="border-2 border-[#4b0d1a] text-[#4b0d1a] rounded-lg px-4 sm:px-6 py-2 text-base sm:text-lg font-medium hover:bg-teal-50 hover:border-teal-600 hover:text-teal-600 transition-all duration-200 text-center">
+      <a href="https://anveshanamagazine.github.io/Anveshana%20Issue%201.pdf" class="block">Read Full Issue (PDF)</a>
+    </div>
+  </div>
+  
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    
+    <!-- Articles and Cover Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 items-start mb-12">
+
+      <!-- Left: Articles -->
+      <div class="space-y-4 sm:space-y-6 order-2 lg:order-1">
+        
+        <div class="border-l-4 border-teal-600 pl-4">
+          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Micheal%20Peskin_Interview.pdf" 
+             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
+             target="_blank" rel="noopener noreferrer">
+            The Particle and the Man: Interview with Michael Peskin
+          </a>
+        </div>
+        
+        <div class="border-l-4 border-teal-600 pl-4">
+          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/BV%20Rajarama%20Bhat_Interview.pdf" 
+             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
+             target="_blank" rel="noopener noreferrer">
+            A Life in Hilbert Space: Interview with B.V. Rajarama Bhat
+          </a>
+        </div>
+        
+        <div class="border-l-4 border-teal-600 pl-4">
+          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Satyanarayana%20Reddy_Interview.pdf" 
+             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
+             target="_blank" rel="noopener noreferrer">
+            Teaching, Learning, and Growing in Mathematics: Interview with Satyanarayana Reddy
+          </a>
+        </div>
+        
+        <div class="border-l-4 border-teal-600 pl-4">
+          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Quantum%20Complexity_Devang%20Bajpai.pdf" 
+             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
+             target="_blank" rel="noopener noreferrer">
+            Quantum Complexity
+          </a>
+          <p class="text-gray-600 text-sm">by Devang Bajpai</p>
+        </div>
+        
+        <div class="border-l-4 border-teal-600 pl-4">
+          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Women%20of%20Sciences_Purnima%20Tiwari.pdf" 
+             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
+             target="_blank" rel="noopener noreferrer">
+            Women of Sciences
+          </a>
+          <p class="text-gray-600 text-sm">by Purnima Tiwari</p>
+        </div>
+        
+        <div class="border-l-4 border-teal-600 pl-4">
+          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Yoga%20of%20Mathematics_Aayush%20Verma.pdf" 
+             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
+             target="_blank" rel="noopener noreferrer">
+            Yoga of Mathematics
+          </a>
+          <p class="text-gray-600 text-sm">by Aayush Verma</p>
+        </div>
+        <div class="border-l-4 border-teal-600 pl-4">
+          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/The%20Art%20of%20Generalization_Arpit%20Dwivedi.pdf" 
+             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
+             target="_blank" rel="noopener noreferrer">
+            The Art of Generalization
+          </a>
+          <p class="text-gray-600 text-sm">by Arpit Dwivedi</p>
+        </div>
+
+        <div class="border-l-4 border-teal-600 pl-4">
+          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Hues%20and%20You_Sameeksha%20Gupta.pdf" 
+             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
+             target="_blank" rel="noopener noreferrer">
+            Hues and You
+          </a>
+          <p class="text-gray-600 text-sm">by Sameeksha Gupta</p>
+        </div>
+
+
+        
+        <div class="border-l-4 border-teal-600 pl-4">
+          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/ML%20is%20Just%20Statistical%20Mechanics%20with%20Better%20Marketing_Vaibhav%20Kalvakota.pdf" 
+             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
+             target="_blank" rel="noopener noreferrer">
+            Machine Learning is Just Statistical Mechanics with Better Marketing
+          </a>
+          <p class="text-gray-600 text-sm">by Vaibhav Kalvakota</p>
+        </div>
+        <div class="border-l-4 border-teal-600 pl-4">
+          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/The%20Enigma%20of%20a%20Dream_Utkarsh%20Kashyap.pdf" 
+             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
+             target="_blank" rel="noopener noreferrer">
+            The Enigma of a Dream
+          </a>
+          <p class="text-gray-600 text-sm">by Utkarsh Kashyap</p>
+        </div>
+        <div class="border-l-4 border-teal-600 pl-4">
+          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Resources_Palette.pdf" 
+             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
+             target="_blank" rel="noopener noreferrer">
+           Resources Palette
+          </a>
+        </div>
+        
+              </div>
+      
+      <!-- Right: Issue Cover -->
+      <div class="order-1 lg:order-2 flex justify-center">
+        <img 
+          onclick="openModal()"
+          src="anveshana cover.jpg" 
+          alt="Anveshanā Issue 1 Cover" 
+          class="cover-clickable rounded-lg shadow-lg w-full max-w-sm sm:max-w-md mx-auto"
+          title="Click to view larger cover"
+        />
+      </div>
+    </div>
+    
+    <!-- Submission Info -->
+    <div class="mt-8 sm:mt-12 text-center max-w-2xl mx-auto">
+      <div class="bg-gray-50 rounded-lg p-4 sm:p-6">
+        <p class="text-gray-700 mb-4 text-sm sm:text-base">
+          Anveshanā is a bi-annual e-magazine. We are open for submissions, please send your articles to 
+          <a href="mailto:editor.anveshana@gmail.com" class="text-teal-700 hover:text-teal-900 font-medium hover:underline">
+            editor.anveshana@gmail.com
+          </a>.
+        </p>
+        <p class="text-gray-600 text-xs sm:text-sm">
+          Please go through the instructions to the authors for some guidelines.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function openModal() {
+      document.getElementById('modal').classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeModal() {
+      document.getElementById('modal').classList.remove('show');
+      document.body.style.overflow = '';
+    }
+    
+    // Close on click outside
+    document.getElementById('modal').onclick = function(e) {
+      if (e.target === this) closeModal();
+    }
+    
+    // Close on Escape key
+    document.onkeydown = function(e) {
+      if (e.key === 'Escape') closeModal();
+    }
+  </script>
+  
 </body>
 </html>
