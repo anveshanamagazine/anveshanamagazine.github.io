@@ -31,15 +31,83 @@
       transform: scale(1.02);
     }
   </style>
+
+
+  <style>
+  .rotate-y-left {
+    transform: perspective(1600px) rotateY(18deg);
+    transform-origin: right;
+  }
+
+  .rotate-y-right {
+    transform: perspective(1600px) rotateY(-18deg);
+    transform-origin: left;
+  }
+
+  @media (min-width: 640px) {
+    .attached-triplet {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      gap: 0;
+    }
+
+    .flatten-right {
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+
+    .flatten-left {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+  }
+</style>
+
+
+
 </head>
 <body class="text-gray-900 min-h-screen relative overflow-x-hidden">
   
   <!-- -->
   <div id="modal" class="modal fixed inset-0 bg-black bg-opacity-60 z-50 items-center justify-center p-4">
-    <div class="relative">
-     
-      <img src="anveshana cover.jpg" alt="Anveshanā Issue 1 Cover - Full Preview" class="max-h-[85vh] max-w-[85vw] rounded-lg shadow-2xl" />
-    </div>
+   
+<div class="relative max-h-[90vh] overflow-y-auto p-4 sm:hidden">
+  <div class="flex flex-col items-center gap-6">
+    <img src="issue2front.png" 
+         alt="Anveshanā Issue 2 - Front Cover" 
+         class="w-auto max-w-full max-h-[80vh] rounded-lg shadow-2xl" />
+    
+    <img src="issue2back.png" 
+         alt="Anveshanā Issue 2 - Back Cover" 
+         class="w-auto max-w-full max-h-[80vh] rounded-lg shadow-2xl" />
+  </div>
+</div>
+
+<!-- forr desktop -->
+<div class="hidden sm:flex attached-triplet">
+  
+  <img src="issue2front.png"
+       alt="Front Cover"
+       class="max-h-[85vh] w-auto rounded-lg flatten-right shadow-2xl rotate-y-left transition-transform duration-300" />
+
+
+  <img src="strip.png" 
+       alt="Spine"
+       class="h-[85vh] w-auto object-contain" />
+
+
+  <img src="issue2back.png"
+       alt="Back Cover"
+       class="max-h-[85vh] w-auto rounded-lg flatten-left shadow-2xl rotate-y-right transition-transform duration-300" />
+</div>
+
+
+
+
+
   </div>
 
   <!-- -->
@@ -83,10 +151,10 @@
   <!-- -->
   <div class="flex flex-col sm:flex-row justify-center pt-8 sm:pt-10 pb-8 sm:pb-10 gap-4 sm:gap-8 px-4">
     <div class="border-2 border-[#4b0d1a] text-[#4b0d1a] rounded-lg px-4 sm:px-6 py-2 text-base sm:text-lg font-medium text-center">
-      Vol 1 • Issue 1 – January 2025
+      Vol 1 • Issue 2 – July 2025
     </div>
-    <div class="border-2 border-[#4b0d1a] text-[#4b0d1a] rounded-lg px-4 sm:px-6 py-2 text-base sm:text-lg font-medium hover:bg-teal-50 hover:border-teal-600 hover:text-teal-600 transition-all duration-200 text-center">
-      <a href="https://anveshanamagazine.github.io/Anveshana%20Issue%201.pdf" class="block">Read Full Issue (PDF)</a>
+    <div class="border-2 border-[#4b0d1a] text-[#4b0d1a] rounded-lg px-4 sm:px-6 py-2 text-base sm:text-lg font-medium hover:bg-orange-50 hover:border-orange-600 hover:text-orange-600 transition-all duration-200 text-center">
+      <a href="https://anveshanamagazine.github.io/July2025.pdf" class="block">Read Full Issue (PDF)</a>
     </div>
   </div>
   
@@ -102,7 +170,7 @@
           <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Micheal%20Peskin_Interview.pdf" 
              class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
              target="_blank" rel="noopener noreferrer">
-            The Particle and the Man: Interview with Michael Peskin
+            A Life Lived and Taught: Interview with Aparna Dar
           </a>
         </div>
         
@@ -110,7 +178,7 @@
           <a href="https://anveshanamagazine.github.io/Vol1Issue%201/BV%20Rajarama%20Bhat_Interview.pdf" 
              class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
              target="_blank" rel="noopener noreferrer">
-            A Life in Hilbert Space: Interview with B.V. Rajarama Bhat
+            Of Mind and Matter: Interview with Sumathi Rao
           </a>
         </div>
         
@@ -118,7 +186,7 @@
           <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Satyanarayana%20Reddy_Interview.pdf" 
              class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
              target="_blank" rel="noopener noreferrer">
-            Teaching, Learning, and Growing in Mathematics: Interview with Satyanarayana Reddy
+            In the Lineage of the Eternal Note: Interview with Jyoti Hegde
           </a>
         </div>
         
@@ -126,64 +194,30 @@
           <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Quantum%20Complexity_Devang%20Bajpai.pdf" 
              class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
              target="_blank" rel="noopener noreferrer">
-            Quantum Complexity
+            Musings around the hyphen in Harish-Chandra
           </a>
-          <p class="text-gray-600 text-sm">by Devang Bajpai</p>
+          <p class="text-gray-600 text-sm">by C.S. Aravinda</p>
         </div>
         
         <div class="border-l-4 border-teal-600 pl-4">
           <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Women%20of%20Sciences_Purnima%20Tiwari.pdf" 
              class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
              target="_blank" rel="noopener noreferrer">
-            Women of Sciences
+            The Divine in the Minuscule
           </a>
-          <p class="text-gray-600 text-sm">by Purnima Tiwari</p>
+          <p class="text-gray-600 text-sm">by Prajnaparamita Barman</p>
         </div>
         
         <div class="border-l-4 border-teal-600 pl-4">
           <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Yoga%20of%20Mathematics_Aayush%20Verma.pdf" 
              class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
              target="_blank" rel="noopener noreferrer">
-            Yoga of Mathematics
-          </a>
-          <p class="text-gray-600 text-sm">by Aayush Verma</p>
-        </div>
-        <div class="border-l-4 border-teal-600 pl-4">
-          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/The%20Art%20of%20Generalization_Arpit%20Dwivedi.pdf" 
-             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
-             target="_blank" rel="noopener noreferrer">
-            The Art of Generalization
-          </a>
-          <p class="text-gray-600 text-sm">by Arpit Dwivedi</p>
-        </div>
-
-        <div class="border-l-4 border-teal-600 pl-4">
-          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Hues%20and%20You_Sameeksha%20Gupta.pdf" 
-             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
-             target="_blank" rel="noopener noreferrer">
-            Hues and You
-          </a>
-          <p class="text-gray-600 text-sm">by Sameeksha Gupta</p>
-        </div>
-
-
-        
-        <div class="border-l-4 border-teal-600 pl-4">
-          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/ML%20is%20Just%20Statistical%20Mechanics%20with%20Better%20Marketing_Vaibhav%20Kalvakota.pdf" 
-             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
-             target="_blank" rel="noopener noreferrer">
-            Machine Learning is Just Statistical Mechanics with Better Marketing
-          </a>
-          <p class="text-gray-600 text-sm">by Vaibhav Kalvakota</p>
-        </div>
-        <div class="border-l-4 border-teal-600 pl-4">
-          <a href="https://anveshanamagazine.github.io/Vol1Issue%201/The%20Enigma%20of%20a%20Dream_Utkarsh%20Kashyap.pdf" 
-             class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
-             target="_blank" rel="noopener noreferrer">
-            The Enigma of a Dream
+            A Goodbye
           </a>
           <p class="text-gray-600 text-sm">by Utkarsh Kashyap</p>
         </div>
+       
+        
         <div class="border-l-4 border-teal-600 pl-4">
           <a href="https://anveshanamagazine.github.io/Vol1Issue%201/Resources_Palette.pdf" 
              class="text-teal-700 hover:text-teal-900 text-base sm:text-lg font-medium hover:underline block mb-1"
@@ -196,12 +230,13 @@
       
       <!-- cover image -->
       <div class="order-1 lg:order-2 flex justify-center">
-        <img 
+        <img
+          style="border-radius: 20px"
           onclick="openModal()"
-          src="anveshana cover.jpg" 
+          src="issue2front.png" 
           alt="Anveshanā Issue 1 Cover" 
           class="cover-clickable rounded-lg shadow-lg w-full max-w-sm sm:max-w-md mx-auto"
-          title="Click to view larger cover"
+          title="Click to view front and back cover"
         />
       </div>
     </div>
