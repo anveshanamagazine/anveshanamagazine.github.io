@@ -73,7 +73,72 @@
     <p class="text-base sm:text-lg text-gray-600">This is a static HTML page to embed PDF. </p>
   </div> -->
 
+<div class="max-w-4xl mx-auto px-4 pb-6">
+  <div class="-translate-y-1 rounded-xl bg-white/80 px-4 py-3 shadow-sm ring-1 ring-gray-200 backdrop-blur">
+    <p class="text-xs sm:text-sm text-gray-600 text-center">
+      <span class="font-semibold">Cite:</span>
+      <span class="text-[#8C5762]" id="citationText">
+       <i>A Life in Hilbert Space: Interview with B.V. Rajarama Bhat</i>, <a href="https://anveshanamagazine.github.io">Anveshanā e-Magazine</a>, January 2025, 
+        available at: https://anveshanamagazine.github.io/bv-rajarama-bhat.html
+      </span>
 
+      <button
+        id="copyCitationBtn"
+        type="button"
+        class="ml-2 inline-flex items-center justify-center rounded p-1 text-gray-500
+               hover:bg-gray-100 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#7b223b]/40"
+        aria-label="Copy citation"
+        title="Copy citation"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true" focusable="false">
+          <rect x="9" y="2" width="6" height="4" rx="1"></rect>
+          <path d="M9 4H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"></path>
+        </svg>
+      </button>
+
+      <span id="copyStatus" class="sr-only" aria-live="polite"></span>
+    </p>
+  </div>
+</div>
+
+<script>
+  function getCitationText() {
+    return document.getElementById('citationText').textContent.replace(/\s+/g, ' ').trim();
+  }
+
+  async function copyCitation() {
+    const text = getCitationText();
+    const btn = document.getElementById('copyCitationBtn');
+    const statusEl = document.getElementById('copyStatus');
+
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'absolute';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+
+      statusEl.textContent = 'Citation copied';
+      btn.classList.add('text-[#7b223b]');
+      setTimeout(() => btn.classList.remove('text-[#7b223b]'), 900);
+    } catch (e) {
+      statusEl.textContent = 'Copy failed';
+    }
+  }
+
+  document.getElementById('copyCitationBtn').addEventListener('click', copyCitation);
+</script>
   <footer class="bg-gray-50 border-t border-gray-200 py-6 text-center text-sm text-gray-600">
     &copy; 2025 Anveshanā Magazine
   </footer>

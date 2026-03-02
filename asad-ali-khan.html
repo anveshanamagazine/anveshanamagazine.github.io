@@ -12,7 +12,7 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anveshanā • January 2026 • Interview with Ustaad Asad Ali Khan</title>
+  <title>Anveshanā • January 2026 • Interview with Ustad Asad Ali Khan</title>
   <link rel="icon" type="image/png" href="favicon.ico">
   <meta name="description" content="Anveshanā January 2026 Issue. Asad Ali Khan (1937-2011), born in Alwar and shaped by the Jaipur lineage, stands
 among the most luminous voices of Hindustani classical music. Revered as Khansaab,
@@ -65,7 +65,7 @@ audience.">
 
   <div class="max-w-4xl mx-auto pt-10 pb-8 px-4 text-center">
     <h1 class="text-3xl sm:text-5xl font-bold text-[#7b223b] mb-3">Anveshanā • January 2026</h1>
-    <p class="text-base sm:text-lg text-gray-600">Vol II • Issue I <br> <span style="font-size: 20px;" class="text-[#7b223b]"> <a href="https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_Ustad_Asad_Ali_Khan.pdf" >In Praise of the Infinite: Interview with Ustaad Asad Ali Khan</a> </span> <br><span class="hover:text-orange-600"> <a href="https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_Ustad_Asad_Ali_Khan.pdf"> Read in PDF</a> </span></p>
+    <p class="text-base sm:text-lg text-gray-600">Vol II • Issue I <br> <span style="font-size: 20px;" class="text-[#7b223b]"> <a href="https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_Ustad_Asad_Ali_Khan.pdf" >In Praise of the Infinite: Interview with Ustad Asad Ali Khan</a> </span> <br><span class="hover:text-orange-600"> <a href="https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_Ustad_Asad_Ali_Khan.pdf"> Read in PDF</a> </span></p>
   </div>
 
 <div class="container mx-auto px-4 pb-12 flex-1">
@@ -79,6 +79,74 @@ audience.">
 <!-- <div style="margin-top: 0;" class="max-w-4xl mx-auto pt-10 pb-8 px-4 text-center">
     <p class="text-base sm:text-lg text-gray-600">This is a static HTML page to embed PDF. </p>
   </div> -->
+
+  <div class="max-w-4xl mx-auto px-4 pb-6">
+  <div class="-translate-y-1 rounded-xl bg-white/80 px-4 py-3 shadow-sm ring-1 ring-gray-200 backdrop-blur">
+    <p class="text-xs sm:text-sm text-gray-600 text-center">
+      <span class="font-semibold">Cite:</span>
+      <span class="text-[#8C5762]" id="citationText">
+       <i>In Praise of the Infinite:
+Interview with Asad Ali Khan</i>, <a href="https://anveshanamagazine.github.io">Anveshanā e-Magazine</a>, January 2026, 
+        available at: https://anveshanamagazine.github.io/asad-ali-khan.html
+      </span>
+
+      <button
+        id="copyCitationBtn"
+        type="button"
+        class="ml-2 inline-flex items-center justify-center rounded p-1 text-gray-500
+               hover:bg-gray-100 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#7b223b]/40"
+        aria-label="Copy citation"
+        title="Copy citation"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true" focusable="false">
+          <rect x="9" y="2" width="6" height="4" rx="1"></rect>
+          <path d="M9 4H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"></path>
+        </svg>
+      </button>
+
+      <span id="copyStatus" class="sr-only" aria-live="polite"></span>
+    </p>
+  </div>
+</div>
+
+<script>
+  function getCitationText() {
+    return document.getElementById('citationText').textContent.replace(/\s+/g, ' ').trim();
+  }
+
+  async function copyCitation() {
+    const text = getCitationText();
+    const btn = document.getElementById('copyCitationBtn');
+    const statusEl = document.getElementById('copyStatus');
+
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'absolute';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+
+      statusEl.textContent = 'Citation copied';
+      btn.classList.add('text-[#7b223b]');
+      setTimeout(() => btn.classList.remove('text-[#7b223b]'), 900);
+    } catch (e) {
+      statusEl.textContent = 'Copy failed';
+    }
+  }
+
+  document.getElementById('copyCitationBtn').addEventListener('click', copyCitation);
+</script>
 
 
   <footer class="bg-gray-50 border-t border-gray-200 py-6 text-center text-sm text-gray-600">
