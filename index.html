@@ -250,7 +250,59 @@
     </div>
     
     <diiv class="mt-12 text-center max-w-2xl mx-auto">
+
       <div class="bg-gray-50 rounded-xl p-6 sm:p-8 border border-[#7b223b]-100">
+        <!-- Subscribe -->
+<section class="max-w-5xl mx-auto px-4 sm:px-6 pb-6">
+  <div class="bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl shadow-sm px-4 py-4 sm:px-5 sm:py-5">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+      
+      <div class="lg:max-w-sm">
+        <h2 class="text-lg sm:text-xl font-bold text-[#7b223b] leading-tight">
+          Subscribe for Issue Notifications
+        </h2>
+       
+      </div>
+
+      <form id="subscribe-form" class="flex flex-col sm:flex-row gap-2 sm:items-center w-full lg:w-auto">
+        <input
+          type="email"
+          name="EMAIL"
+          id="mce-EMAIL"
+          required
+          placeholder="Email address"
+          class="rounded-lg border border-gray-300 bg-white/90 px-3 py-2 text-sm text-gray-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#7b223b]/20 focus:border-[#7b223b] min-w-[220px]"
+        />
+
+        <input
+          type="text"
+          name="FNAME"
+          id="mce-FNAME"
+          required
+          placeholder="Name"
+          class="rounded-lg border border-gray-300 bg-white/90 px-3 py-2 text-sm text-gray-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#7b223b]/20 focus:border-[#7b223b] min-w-[150px]"
+        />
+
+        <input type="hidden" name="u" value="906de92fa61cc6b12d0819360">
+        <input type="hidden" name="id" value="fe9a870191">
+        <input type="hidden" name="f_id" value="003046e4f0">
+
+        <div aria-hidden="true" style="position:absolute; left:-5000px;">
+          <input type="text" name="b_906de92fa61cc6b12d0819360_fe9a870191" tabindex="-1" value="">
+        </div>
+
+        <button
+          type="submit"
+          id="subscribe-button"
+          class="inline-flex items-center justify-center rounded-lg bg-[#7b223b] px-4 py-2 text-sm font-medium text-white hover:bg-[#631b31] transition-colors duration-200 shadow-sm whitespace-nowrap">
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+    <p id="subscribe-message" class="mt-3 text-sm text-gray-600 hidden"></p>
+  </div>
+</section>
         <h3 class="text-xl sm:text-xl font-bold text-[#7b223b] mb-4">Contribute to Anveshanā</h3>
         <p class="text-gray-700 mb-4 text-sm sm:text-base">
           Anveshanā is a bi-annual (twice a year) e-magazine. We are open for submissions, please send your articles to the editorial team. Please go through the instructions to the authors for some guidelines
@@ -294,6 +346,60 @@
       if (e.key === 'Escape') closeModal();
     }
   </script>
-  
+  <script>
+(function () {
+  const form = document.getElementById('subscribe-form');
+  const message = document.getElementById('subscribe-message');
+  const button = document.getElementById('subscribe-button');
+
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const data = new URLSearchParams(new FormData(form));
+    const callbackName = 'mailchimpCallback_' + Date.now();
+    const script = document.createElement('script');
+
+    button.disabled = true;
+    button.textContent = 'Subscribing...';
+    message.classList.add('hidden');
+    message.textContent = '';
+
+    window[callbackName] = function (response) {
+      button.disabled = false;
+      button.textContent = 'Subscribe';
+
+      if (response.result === 'success' || /already subscribed/i.test(response.msg || '')) {
+        form.classList.add('hidden');
+        message.textContent = 'Thank you, you have been subscribed to Anveshanā.\n Please keep editor.anveshana@gmail.com whitelisted to receive notifications bi-annually. This service is free, powered by Mailchimp.';
+        message.className = 'mt-3 text-sm text-green-700';
+      } else {
+        const temp = document.createElement('div');
+        temp.innerHTML = response.msg || 'Something went wrong. Please try again. You may also contact editor.anveshana@gmail.com for any assistance.';
+        message.textContent = temp.textContent || temp.innerText || 'Something went wrong. Please try again. You may also contact editor.anveshana@gmail.com for any assistance.';
+        message.className = 'mt-3 text-sm text-red-700';
+      }
+
+      script.remove();
+      delete window[callbackName];
+    };
+
+    script.src =
+      'https://github.us7.list-manage.com/subscribe/post-json?c=' + callbackName + '&' + data.toString();
+
+    script.onerror = function () {
+      button.disabled = false;
+      button.textContent = 'Subscribe';
+      message.textContent = 'Unable to subscribe right now. Please try again later. You may also contact editor.anveshana@gmail.com for any assistance.';
+      message.className = 'mt-3 text-sm text-red-700';
+      script.remove();
+      delete window[callbackName];
+    };
+
+    document.body.appendChild(script);
+  });
+})();
+</script>
 </body>
 </html>

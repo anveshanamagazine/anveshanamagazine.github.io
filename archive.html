@@ -6,7 +6,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-S0LQK2H7FL');
 </script>
   <meta charset="UTF-8" />
@@ -21,8 +20,6 @@
       font-family: 'Mukta', sans-serif;
       background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
     }
-    
-
   </style>
 </head>
 <body class="text-gray-900 min-h-screen relative overflow-x-hidden">
@@ -30,129 +27,140 @@
   <nav class="bg-gray-50 border-b border-gray-200 shadow-sm sticky top-0 z-40">
     <div class="max-w-5xl mx-auto px-6 sm:px-8">
       <div class="flex items-center justify-between py-3">
-        <!-- Logo on left -->
         <div class="flex items-center">
           <div class="w-12 h-12 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mr-2 sm:mr-3">
             <span><img src="favicon-new.png" alt="Anveshana Logo" class="w-24 h-24 sm:w-40 sm:h-40 object-contain" /></span>
           </div>
           <span class="text-lg sm:text-xl font-bold text-[#7b223b]">Anveshanā e-Magazine</span>
         </div>
-        
         <div class="flex space-x-4 sm:space-x-8">
-          <a href="index.html" class="text-gray-700 hover:text-[#7b223b] hover:border-b-2 hover:border-[#7b223b] pb-1 transition-all duration-200 font-medium text-sm sm:text-base">
-            Home
-          </a>
-          <a href="#" class="text-[#7b223b] border-b-2 border-[#7b223b] pb-1 font-medium text-sm sm:text-base">
-            Archive
-          </a>
-          <a href="about.html" class="text-gray-700 hover:text-[#7b223b] hover:border-b-2 hover:border-[#7b223b] pb-1 transition-all duration-200 font-medium text-sm sm:text-base">
-            About
-          </a>
+          <a href="index.html" class="text-gray-700 hover:text-[#7b223b] hover:border-b-2 hover:border-[#7b223b] pb-1 transition-all duration-200 font-medium text-sm sm:text-base">Home</a>
+          <a href="#" class="text-[#7b223b] border-b-2 border-[#7b223b] pb-1 font-medium text-sm sm:text-base">Archive</a>
+          <a href="about.html" class="text-gray-700 hover:text-[#7b223b] hover:border-b-2 hover:border-[#7b223b] pb-1 transition-all duration-200 font-medium text-sm sm:text-base">About</a>
         </div>
       </div>
     </div>
   </nav>
-  
 
   <div class="max-w-4xl mx-auto pt-10 pb-8 sm:pt-12 sm:pb-10 px-4 sm:px-6 border-b-2 border-gray-200">
     <div class="flex items-center justify-center">
       <div class="text-center">
         <h1 class="text-3xl sm:text-3xl font-bold text-[#7b223b] mb-3">Archive for Anveshanā</h1>
         <p class="text-gray-600 italic">Browse through past issues.</p>
+
+        <!-- ── dropdown ── -->
+        <div class="mt-6 flex flex-col sm:flex-row items-start sm:items-end gap-4 justify-center">
+  <div class="flex flex-col gap-1 text-left">
+    <label for="sel-volume" class="text-[11px] font-semibold uppercase tracking-[0.18em] text-gray-500">
+      Volume
+    </label>
+    <div class="relative">
+      <select id="sel-volume"
+        class="appearance-none bg-white/60 backdrop-blur-md border border-white/40 text-gray-800 text-sm rounded-xl px-4 py-2.5 pr-10 shadow-[0_4px_18px_rgba(123,34,59,0.08)] focus:outline-none focus:ring-2 focus:ring-[#7b223b]/20 focus:border-[#7b223b]/30 min-w-[180px] transition-all duration-200">
+        <option value="">Select Volume</option>
+        <option value="2">Volume 2 (2026)</option>
+        <option value="1">Volume 1 (2025)</option>
+      </select>
+      <div class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-500">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <span class="text-gray-300 text-lg hidden sm:block mb-2">→</span>
+
+  <div class="flex flex-col gap-1 text-left">
+    <label for="sel-issue" class="text-[11px] font-semibold uppercase tracking-[0.18em] text-gray-500">
+      Issue
+    </label>
+    <div class="relative">
+      <select id="sel-issue" disabled
+        class="appearance-none bg-white/60 backdrop-blur-md border border-white/40 text-gray-800 text-sm rounded-xl px-4 py-2.5 pr-10 shadow-[0_4px_18px_rgba(123,34,59,0.08)] focus:outline-none focus:ring-2 focus:ring-[#7b223b]/20 focus:border-[#7b223b]/30 min-w-[180px] transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed">
+        <option value="">Select Issue</option>
+      </select>
+      <div class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-500">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- ── dropdowns ── -->
+
       </div>
     </div>
   </div>
   
   <!-- starting archive -->
   <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
-    
-<!-- VOLUME 2 -->
 
+<!-- VOLUME 2 -->
 <div class="bg-white rounded-xl p-6 sm:p-8 mb-8 shadow-sm">
       <div class="flex items-center space-x-4 mb-6">
-        
         <div>
           <h2 class="text-2xl sm:text-3xl font-bold text-[#7b223b]">Volume 2</h2>
           <p class="text-gray-600 text-sm sm:text-base">2026 • 2 Issues</p>
         </div>
       </div>
-      
       <div class="pt-6 border-t border-gray-200">
         <div class="mt-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             <!-- Issue 1 -->
-            <div class="bg-gray-50 rounded-lg p-4 sm:p-6">
+            <div id="v2i1" class="bg-gray-50 rounded-lg p-4 sm:p-6">
               <div class="flex items-start space-x-4">
                 <div class="flex-shrink-0">
-                  <img 
-                    src="Front Cover January 2025.png" 
-                    alt="Jan 2026 Cover" 
-                    class="w-20 h-28 sm:w-24 sm:h-32 object-cover rounded-md shadow-md"
-                  />
+                  <img src="Front Cover January 2025.png" alt="Jan 2026 Cover" class="w-20 h-28 sm:w-24 sm:h-32 object-cover rounded-md shadow-md"/>
                 </div>
                 <div class="flex-1">
                   <div class="flex items-center justify-between mb-2">
                     <h3 class="text-lg sm:text-xl font-bold text-[#4b0d1a]">Issue 1</h3>
-                    <span class="text-xs sm:text-sm text-gray-500 bg-gray-200 px-2 py-1 rounded">January 2026 <br></span>
+                    <span class="text-xs sm:text-sm text-gray-500 bg-gray-200 px-2 py-1 rounded">January 2026</span>
                   </div>
                   <p class="text-gray-600 text-sm mb-3">This issue brings together interviews with Ustad Asad Ali Khan and Amit Kuber, recollections in tribute to a legend, article on probability theory, and a trek travelogue, enriched with watercolor illustrations.</p>
                   <div class="flex flex-col sm:flex-row gap-2">
-                    <a href="https://anveshanamagazine.github.io/Anveshana_January_2026.pdf" 
-                       target="_blank" rel="noopener noreferrer"
+                    <a href="https://anveshanamagazine.github.io/Anveshana_January_2026.pdf" target="_blank" rel="noopener noreferrer"
                        class="inline-flex items-center justify-center px-3 py-2 text-xs sm:text-sm font-medium text-white bg-teal-600 rounded-md">
-                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                      </svg>
+                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       Read PDF
                     </a>
-                    <a href="index.html" 
+                    <a href="index.html"
                        class="inline-flex items-center justify-center px-3 py-2 text-xs sm:text-sm font-medium text-teal-700 bg-teal-50 rounded-md">
-                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                      </svg>
+                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       Browse Issue
                     </a>
                   </div>
-
                 </div>
               </div>
             </div>
             
-            <!-- issue2 -->
-            <dv class="bg-gray-50 rounded-lg p-4 sm:p-6">
+            <!-- Issue 2 -->
+            <div id="v2i2" class="bg-gray-50 rounded-lg p-4 sm:p-6">
               <div class="flex items-start space-x-4">
                 <div class="flex-shrink-0">
-                  <img 
-                    src="upcoming.jpg" 
-                    alt="Issue 2 Cover" 
-                    class="w-20 h-28 sm:w-24 sm:h-32 object-cover rounded-md shadow-md"
-                  />
+                  <img src="upcoming.jpg" alt="Issue 2 Cover" class="w-20 h-28 sm:w-24 sm:h-32 object-cover rounded-md shadow-md"/>
                 </div>
                 <div class="flex-1">
                   <div class="flex items-center justify-between mb-2">
                     <h3 class="text-lg sm:text-xl font-bold text-[#4b0d1a]">Issue 2</h3>
-                    <span class="text-xs sm:text-sm text-gray-500 bg-gray-200 px-2 py-1 rounded">July 2026 <br></span>
+                    <span class="text-xs sm:text-sm text-gray-500 bg-gray-200 px-2 py-1 rounded">July 2026</span>
                   </div>
                   <p class="text-gray-600 text-sm mb-3">Upcoming...</p>
                   <div class="flex flex-col sm:flex-row gap-2">
-                    <a href="" 
-                       target="_blank" rel="noopener noreferrer"
+                    <a href="#" rel="noopener noreferrer"
                        class="inline-flex items-center justify-center px-3 py-2 text-xs sm:text-sm font-medium text-white bg-teal-600 rounded-md">
-                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                      </svg>
+                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       Read PDF
                     </a>
-                    <a href="" 
+                    <a href="#"
                        class="inline-flex items-center justify-center px-3 py-2 text-xs sm:text-sm font-medium text-teal-700 bg-teal-50 rounded-md">
-                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                      </svg>
+                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       Browse Issue
                     </a>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -160,94 +168,72 @@
           </div>
         </div>
       </div>
-      <!-- volume 1 -->
+</div>
+
+<!-- VOLUME 1 -->
     <div class="bg-white rounded-xl p-6 sm:p-8 mb-8 shadow-sm">
       <div class="flex items-center space-x-4 mb-6">
-        
         <div>
           <h2 class="text-2xl sm:text-3xl font-bold text-[#7b223b]">Volume 1</h2>
           <p class="text-gray-600 text-sm sm:text-base">2025 • 2 Issues</p>
         </div>
       </div>
-      
       <div class="pt-6 border-t border-gray-200">
         <div class="mt-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             <!-- Issue 1 -->
-            <div class="bg-gray-50 rounded-lg p-4 sm:p-6">
+            <div id="v1i1" class="bg-gray-50 rounded-lg p-4 sm:p-6">
               <div class="flex items-start space-x-4">
                 <div class="flex-shrink-0">
-                  <img 
-                    src="anveshana cover.jpg" 
-                    alt="Issue 1 Cover" 
-                    class="w-20 h-28 sm:w-24 sm:h-32 object-cover rounded-md shadow-md"
-                  />
+                  <img src="anveshana cover.jpg" alt="Issue 1 Cover" class="w-20 h-28 sm:w-24 sm:h-32 object-cover rounded-md shadow-md"/>
                 </div>
                 <div class="flex-1">
                   <div class="flex items-center justify-between mb-2">
                     <h3 class="text-lg sm:text-xl font-bold text-[#4b0d1a]">Issue 1</h3>
-                    <span class="text-xs sm:text-sm text-gray-500 bg-gray-200 px-2 py-1 rounded">January 2025 <br></span>
+                    <span class="text-xs sm:text-sm text-gray-500 bg-gray-200 px-2 py-1 rounded">January 2025</span>
                   </div>
-                  <p class="text-gray-600 text-sm mb-3">This inaugural issue features interviews with Michael Peskin, Satyanarayana Reddy, and B.V. Rajarama Bhat.
-Alongside, a selection of articles in Anveshanā.</p>
+                  <p class="text-gray-600 text-sm mb-3">This inaugural issue features interviews with Michael Peskin, Satyanarayana Reddy, and B.V. Rajarama Bhat. Alongside, a selection of articles in Anveshanā.</p>
                   <div class="flex flex-col sm:flex-row gap-2">
-                    <a href="https://anveshanamagazine.github.io/Anveshana%20Issue%201.pdf" 
-                       target="_blank" rel="noopener noreferrer"
+                    <a href="https://anveshanamagazine.github.io/Anveshana%20Issue%201.pdf" target="_blank" rel="noopener noreferrer"
                        class="inline-flex items-center justify-center px-3 py-2 text-xs sm:text-sm font-medium text-white bg-teal-600 rounded-md">
-                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                      </svg>
+                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       Read PDF
                     </a>
-                    <a href="Jan2025.html" 
+                    <a href="Jan2025.html"
                        class="inline-flex items-center justify-center px-3 py-2 text-xs sm:text-sm font-medium text-teal-700 bg-teal-50 rounded-md">
-                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                      </svg>
+                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       Browse Issue
                     </a>
                   </div>
-
                 </div>
               </div>
             </div>
             
-            <!-- issue2 -->
-            <dv class="bg-gray-50 rounded-lg p-4 sm:p-6">
+            <!-- Issue 2 -->
+            <div id="v1i2" class="bg-gray-50 rounded-lg p-4 sm:p-6">
               <div class="flex items-start space-x-4">
                 <div class="flex-shrink-0">
-                  <img 
-                    src="issue2front.png" 
-                    alt="Issue 2 Cover" 
-                    class="w-20 h-28 sm:w-24 sm:h-32 object-cover rounded-md shadow-md"
-                  />
+                  <img src="issue2front.png" alt="Issue 2 Cover" class="w-20 h-28 sm:w-24 sm:h-32 object-cover rounded-md shadow-md"/>
                 </div>
                 <div class="flex-1">
                   <div class="flex items-center justify-between mb-2">
                     <h3 class="text-lg sm:text-xl font-bold text-[#4b0d1a]">Issue 2</h3>
-                    <span class="text-xs sm:text-sm text-gray-500 bg-gray-200 px-2 py-1 rounded">July 2025 <br></span>
+                    <span class="text-xs sm:text-sm text-gray-500 bg-gray-200 px-2 py-1 rounded">July 2025</span>
                   </div>
-                  <p class="text-gray-600 text-sm mb-3">This issue features interviews with Aparna Dar, Sumathi Rao, and Jyoti Hegde.
-                  In tandem, this issue includes a selection of articles.</p>
+                  <p class="text-gray-600 text-sm mb-3">This issue features interviews with Aparna Dar, Sumathi Rao, and Jyoti Hegde. In tandem, this issue includes a selection of articles.</p>
                   <div class="flex flex-col sm:flex-row gap-2">
-                    <a href="https://anveshanamagazine.github.io/Anveshana%20July%202025.pdf" 
-                       target="_blank" rel="noopener noreferrer"
+                    <a href="https://anveshanamagazine.github.io/Anveshana%20July%202025.pdf" target="_blank" rel="noopener noreferrer"
                        class="inline-flex items-center justify-center px-3 py-2 text-xs sm:text-sm font-medium text-white bg-teal-600 rounded-md">
-                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                      </svg>
+                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       Read PDF
                     </a>
-                    <a href="July2025.html" 
+                    <a href="July2025.html"
                        class="inline-flex items-center justify-center px-3 py-2 text-xs sm:text-sm font-medium text-teal-700 bg-teal-50 rounded-md">
-                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                      </svg>
+                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       Browse Issue
                     </a>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -257,16 +243,49 @@ Alongside, a selection of articles in Anveshanā.</p>
       </div>
     </div>
 
-    </div>
-
-
-
-    
   </div>
 
+  <!-- ── Cascade dropdown logic ── -->
+  <script>
+  (function () {
+    var ISSUES = {
+      "2": [
+        { anchor: "v2i1", label: "Issue 1 — January 2026" },
+        { anchor: "v2i2", label: "Issue 2 — July 2026 (Upcoming)" }
+      ],
+      "1": [
+        { anchor: "v1i1", label: "Issue 1 — January 2025" },
+        { anchor: "v1i2", label: "Issue 2 — July 2025" }
+      ]
+    };
 
-  
+    var selVol   = document.getElementById('sel-volume');
+    var selIssue = document.getElementById('sel-issue');
 
-  
+    selVol.addEventListener('change', function () {
+      selIssue.innerHTML = '<option value="">Select Issue</option>';
+      if (!selVol.value) { selIssue.disabled = true; return; }
+      (ISSUES[selVol.value] || []).forEach(function (iss) {
+        var opt = document.createElement('option');
+        opt.value = iss.anchor;
+        opt.textContent = iss.label;
+        selIssue.appendChild(opt);
+      });
+      selIssue.disabled = false;
+    });
+
+    selIssue.addEventListener('change', function () {
+      var id = selIssue.value;
+      if (!id) return;
+      var el = document.getElementById(id);
+      if (!el) return;
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      el.style.outline = '2px solid #7b223b';
+      el.style.outlineOffset = '4px';
+      setTimeout(function () { el.style.outline = ''; el.style.outlineOffset = ''; }, 1800);
+    });
+  })();
+  </script>
+
 </body>
 </html>
