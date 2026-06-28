@@ -1,180 +1,264 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:fo="http://www.w3.org/1999/XSL/Format"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://anveshanamagazine.github.io/</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://anveshanamagazine.github.io/</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/archive.html</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://anveshanamagazine.github.io/archive.html</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/about.html</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://anveshanamagazine.github.io/about.html</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Anveshana_January_2026.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://anveshanamagazine.github.io/Anveshana_January_2026.pdf</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_Ustad_Asad_Ali_Khan.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_Ustad_Asad_Ali_Khan.pdf</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_At_Khansaab_Doorway.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_At_Khansaab_Doorway.pdf</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_Amit_Kuber.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_Amit_Kuber.pdf</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_A_Journey_to_the_Valley_of_God.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_A_Journey_to_the_Valley_of_God.pdf</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_Be_Wise_Randomize.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_Be_Wise_Randomize.pdf</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_Resources_Palette.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://anveshanamagazine.github.io/Jan2026/Anveshana_January_2026_Resources_Palette.pdf</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/index.html</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://anveshanamagazine.github.io/Anveshana%20Issue%201.pdf</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Anveshana%20Issue%201.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://anveshanamagazine.github.io/Jan2025.html</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Jan2025.html</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://anveshanamagazine.github.io/Anveshana%20July%202025.pdf</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Anveshana%20July%202025.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://anveshanamagazine.github.io/July2025.html</loc>
+	<lastmod>2026-06-29T01:30:28+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/July2025.html</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Micheal%20Peskin_Interview.pdf</loc>
+	<lastmod>2026-06-29T01:30:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Vol1Issue%201/Micheal%20Peskin_Interview.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/BV%20Rajarama%20Bhat_Interview.pdf</loc>
+	<lastmod>2026-06-29T01:30:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Vol1Issue%201/BV%20Rajarama%20Bhat_Interview.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Satyanarayana%20Reddy_Interview.pdf</loc>
+	<lastmod>2026-06-29T01:30:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Vol1Issue%201/Satyanarayana%20Reddy_Interview.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Quantum%20Complexity_Devang%20Bajpai.pdf</loc>
+	<lastmod>2026-06-29T01:30:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Vol1Issue%201/Quantum%20Complexity_Devang%20Bajpai.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Women%20of%20Sciences_Purnima%20Tiwari.pdf</loc>
+	<lastmod>2026-06-29T01:30:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Vol1Issue%201/Women%20of%20Sciences_Purnima%20Tiwari.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Yoga%20of%20Mathematics_Aayush%20Verma.pdf</loc>
+	<lastmod>2026-06-29T01:30:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Vol1Issue%201/Yoga%20of%20Mathematics_Aayush%20Verma.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/The%20Art%20of%20Generalization_Arpit%20Dwivedi.pdf</loc>
+	<lastmod>2026-06-29T01:30:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Vol1Issue%201/The%20Art%20of%20Generalization_Arpit%20Dwivedi.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Hues%20and%20You_Sameeksha%20Gupta.pdf</loc>
+	<lastmod>2026-06-29T01:30:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Vol1Issue%201/Hues%20and%20You_Sameeksha%20Gupta.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/ML%20is%20Just%20Statistical%20Mechanics%20with%20Better%20Marketing_Vaibhav%20Kalvakota.pdf</loc>
+	<lastmod>2026-06-29T01:30:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Vol1Issue%201/ML%20is%20Just%20Statistical%20Mechanics%20with%20Better%20Marketing_Vaibhav%20Kalvakota.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/The%20Enigma%20of%20a%20Dream_Utkarsh%20Kashyap.pdf</loc>
+	<lastmod>2026-06-29T01:30:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Vol1Issue%201/The%20Enigma%20of%20a%20Dream_Utkarsh%20Kashyap.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Resources_Palette.pdf</loc>
+	<lastmod>2026-06-29T01:30:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/Vol1Issue%201/Resources_Palette.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Satyanarayana%20Reddy_Interview.pdf</loc>
+	<lastmod>2026-06-29T01:30:33+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Interview%20with%20Aparna%20Dar.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Yoga%20of%20Mathematics_Aayush%20Verma.pdf</loc>
+	<lastmod>2026-06-29T01:30:34+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Interview%20with%20Sumathi%20Rao.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Anveshana%20Issue%201.pdf</loc>
+	<lastmod>2026-06-29T01:30:35+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Interview%20with%20Jyoti%20Hegde.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/ML%20is%20Just%20Statistical%20Mechanics%20with%20Better%20Marketing_Vaibhav%20Kalvakota.pdf</loc>
+	<lastmod>2026-06-29T01:30:35+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Musings%20around%20the%20hyphen%20in%20Harish-Chandra%20by%20C.S.%20Aravinda.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/Anveshana%20July%202025.pdf</loc>
+	<lastmod>2026-06-29T01:30:35+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_The%20Divine%20in%20the%20Minuscule%20by%20Prajnaparamita%20Barman.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Interview%20with%20Aparna%20Dar.pdf</loc>
+	<lastmod>2026-06-29T01:30:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_A%20Goodbye%20by%20Utkarsh%20Kashyap.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Interview%20with%20Sumathi%20Rao.pdf</loc>
+	<lastmod>2026-06-29T01:30:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Resources%20Palette.pdf</loc>
-  <lastmod>2026-06-08T10:38:18+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Interview%20with%20Jyoti%20Hegde.pdf</loc>
+	<lastmod>2026-06-29T01:30:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
-
+<url>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Musings%20around%20the%20hyphen%20in%20Harish-Chandra%20by%20C.S.%20Aravinda.pdf</loc>
+	<lastmod>2026-06-29T01:30:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_The%20Divine%20in%20the%20Minuscule%20by%20Prajnaparamita%20Barman.pdf</loc>
+	<lastmod>2026-06-29T01:30:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_A%20Goodbye%20by%20Utkarsh%20Kashyap.pdf</loc>
+	<lastmod>2026-06-29T01:30:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Resources%20Palette.pdf</loc>
+	<lastmod>2026-06-29T01:30:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Micheal%20Peskin_Interview.pdf</loc>
+	<lastmod>2026-06-29T01:30:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/BV%20Rajarama%20Bhat_Interview.pdf</loc>
+	<lastmod>2026-06-29T01:30:37+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Interview%20with%20Aparna%20Dar.pdf</loc>
+	<lastmod>2026-06-29T01:30:37+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Quantum%20Complexity_Devang%20Bajpai.pdf</loc>
+	<lastmod>2026-06-29T01:30:37+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Women%20of%20Sciences_Purnima%20Tiwari.pdf</loc>
+	<lastmod>2026-06-29T01:30:38+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Musings%20around%20the%20hyphen%20in%20Harish-Chandra%20by%20C.S.%20Aravinda.pdf</loc>
+	<lastmod>2026-06-29T01:30:38+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/The%20Art%20of%20Generalization_Arpit%20Dwivedi.pdf</loc>
+	<lastmod>2026-06-29T01:30:38+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Resources%20Palette.pdf</loc>
+	<lastmod>2026-06-29T01:30:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Hues%20and%20You_Sameeksha%20Gupta.pdf</loc>
+	<lastmod>2026-06-29T01:30:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/The%20Enigma%20of%20a%20Dream_Utkarsh%20Kashyap.pdf</loc>
+	<lastmod>2026-06-29T01:30:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/Vol1Issue%201/Resources_Palette.pdf</loc>
+	<lastmod>2026-06-29T01:30:40+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Interview%20with%20Jyoti%20Hegde.pdf</loc>
+	<lastmod>2026-06-29T01:30:42+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_Interview%20with%20Sumathi%20Rao.pdf</loc>
+	<lastmod>2026-06-29T01:30:43+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_A%20Goodbye%20by%20Utkarsh%20Kashyap.pdf</loc>
+	<lastmod>2026-06-29T01:30:43+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://anveshanamagazine.github.io/July2025/Anveshana%20July%202025_The%20Divine%20in%20the%20Minuscule%20by%20Prajnaparamita%20Barman.pdf</loc>
+	<lastmod>2026-06-29T01:30:44+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
 </urlset>
